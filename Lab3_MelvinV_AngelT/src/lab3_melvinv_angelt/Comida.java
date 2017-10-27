@@ -27,7 +27,7 @@ public class Comida extends Productos{
 
     @Override
     public String toString() {
-        return "Comida{" + "fecha=" + fecha + '}';
+        return "Comida"+"\n" + "fecha=" + fecha + "\n";
     }
     
     

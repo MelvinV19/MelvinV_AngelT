@@ -52,7 +52,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "usuario=" + usuario + ", password=" + password + ", correo=" + correo + ", nombre=" + nombre + ", id=" + id + ", fecha=" + fecha + '}';
+        return "Persona"+"\n" + "usuario: " + usuario +"\n"+ "password: " + password +"\n" +"correo: " + correo +"\n"+ "nombre: " + nombre +"\n" +"id: " + id + "\n"+"fecha: " + fecha + "\n";
     }
     
 }
