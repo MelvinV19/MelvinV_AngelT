@@ -14,7 +14,7 @@ public class Lab3_MelvinV_AngelT {
         ArrayList lista=new ArrayList();
 
         Scanner input= new Scanner(System.in);
-        String opcion="";
+        
         String usuario="admin";
         String password="Pass1234";
         String emailAdmin="socio01@email.com";
@@ -28,6 +28,7 @@ public class Lab3_MelvinV_AngelT {
         //default socio
         //per.add(new Persona(usuario,password,emailAdmin,id,fecha));
         
+        String opcion="";
         while (!opcion.equals("e")){//Inicio while
             opcion=JOptionPane.showInputDialog(""
                     + "a - Log in\n"
@@ -38,15 +39,15 @@ public class Lab3_MelvinV_AngelT {
             if (opcion.equals("a"))//Login
             {
                 String login= "";
-                while (!login.equals("d")){
-                    opcion=JOptionPane.showInputDialog(""
+                while (!login.equals("d")){//while login
+                    login=JOptionPane.showInputDialog(""
                     + "a - Socio\n"
                     + "b - Clientes in\n"
                     + "c - Empleados\n"
                     + "d - Regresar al menú principal\n"
                     + "");
                     
-                    if (opcion.equals("a"))//Login socio
+                    if (login.equals("a"))//Login socio
                     {
                         int socOpt = Integer.parseInt(JOptionPane.showInputDialog("Ingrese opción: \n"+
                         "1 - Agregar"+
@@ -138,18 +139,10 @@ public class Lab3_MelvinV_AngelT {
                 
                 
                 
-                }
+                }//fin while login
                 
+                }//fin opción login
                 
-                                        
-                    
-                }
-                
-                
-            
-            
-            
-            
         }//fin while menu
         
     }//final main
