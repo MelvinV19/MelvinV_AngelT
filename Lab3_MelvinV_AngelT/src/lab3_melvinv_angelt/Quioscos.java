@@ -11,6 +11,16 @@ public class Quioscos extends Locales{
     public Quioscos() {
     }
 
+    public Quioscos(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Quioscos(String nombre, int piso, String hora) {
+        super(nombre, piso, hora);
+        this.nombre = nombre;
+    }
+    
+
     public ArrayList<Productos> getProducto() {
         return productoq;
     }
