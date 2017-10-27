@@ -1,8 +1,7 @@
-
 package lab3_melvinv_angelt;
 
+public class Tiendas extends Locales {
 
-public class Tiendas extends Locales{
     int tam;
 
     public Tiendas() {
@@ -22,14 +21,14 @@ public class Tiendas extends Locales{
     }
 
     public void setTam(int tam) {
-        if(tam<=18){
-           this.tam = tam; 
+        if (tam <= 18) {
+            this.tam = tam;
         }
     }
 
     @Override
     public String toString() {
-        return "Tiendas"+"\n" +"nombre: "+super.getNombre()+"\n"+"Horario: "+super.getHora() +"\n"+"Piso: "+super.getPiso()+"\n"+"tam: " + tam + "\n";
+        return "Tiendas" + "\n" + "nombre: " + super.getNombre() + "\n" + "Horario: " + super.getHora() + "\n" + "Piso: " + super.getPiso() + "\n" + "tam: " + tam + "\n";
     }
-    
+
 }
