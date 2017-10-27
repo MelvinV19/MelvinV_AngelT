@@ -5,54 +5,26 @@ import java.util.ArrayList;
 
 
 public class Quioscos extends Locales{
-    Tiendas t= new Tiendas();
+    ArrayList<Productos>productoq =new ArrayList();
 
-    public Tiendas getT() {
-        return t;
+    public Quioscos() {
     }
 
-    public void setT(Tiendas t) {
-        this.t = t;
+    public ArrayList<Productos> getProducto() {
+        return productoq;
     }
 
-    public String getNombre() {
-        return nombre;
+    public void setProducto(ArrayList<Productos> lista) {
+        this.productoq = productoq;
+    }
+    public void adicion(Productos producto){
+        productoq.add(producto);
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    @Override
+    public String toString() {
+        return "Quioscos"+"\n" + "productos: " + lista + "\n";
     }
-
-    public int getPiso() {
-        return piso;
-    }
-
-    public void setPiso(int piso) {
-        this.piso = piso;
-    }
-
-    public ArrayList<Empleados> getLista() {
-        return lista;
-    }
-
-    public void setLista(ArrayList<Empleados> lista) {
-        this.lista = lista;
-    }
-
-    public ArrayList<Productos> getLista2() {
-        return lista2;
-    }
-
-    public void setLista2(ArrayList<Productos> lista2) {
-        this.lista2 = lista2;
-    }
-
-    public String getHora() {
-        return hora;
-    }
-
-    public void setHora(String hora) {
-        this.hora = hora;
-    }
+    
     
 }

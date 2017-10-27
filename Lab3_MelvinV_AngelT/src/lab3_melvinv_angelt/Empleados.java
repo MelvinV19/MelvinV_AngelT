@@ -38,7 +38,7 @@ public class Empleados extends Persona {
 
     @Override
     public String toString() {
-        return "Empleados{" + "hora=" + hora + ", productos=" + productos + '}';
+        return "Empleados"+"\n" + "hora: " + hora + "\n"+"productos: " + productos + "\n";
     }
     
 }

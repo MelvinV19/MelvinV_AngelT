@@ -27,7 +27,7 @@ public class Juguetes extends Productos{
 
     @Override
     public String toString() {
-        return "Juguetes{" + "tipo=" + tipo + '}';
+        return "Juguetes"+"\n" + "tipo: " + tipo + "\n";
     }
     
 }

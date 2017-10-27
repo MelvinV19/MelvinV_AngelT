@@ -23,7 +23,7 @@ public class Locales {
     public String getNombre() {
         return nombre;
     }
-
+    
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -58,6 +58,12 @@ public class Locales {
 
     public void setHora(String hora) {
         this.hora = hora;
+    }
+     public void adicion(Empleados empleados){
+        lista.add(empleados);
+    }
+     public void adicion(Productos producto){
+        lista2.add(producto);
     }
 
     @Override
