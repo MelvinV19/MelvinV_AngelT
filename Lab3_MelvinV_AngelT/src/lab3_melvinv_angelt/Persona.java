@@ -22,6 +22,10 @@ public class Persona {
         this.fecha = fecha;
     }
 
+    Persona(String usuario, String password, String emailAdmin, String id, String fecha) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
