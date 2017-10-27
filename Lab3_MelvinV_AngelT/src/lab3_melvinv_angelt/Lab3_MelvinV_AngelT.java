@@ -28,44 +28,34 @@ public class Lab3_MelvinV_AngelT {
         //default socio
         //per.add(new Persona(usuario,password,emailAdmin,id,fecha));
         
-        while (!opcion.equals("e")){
+        while (!opcion.equals("e")){//Inicio while
             opcion=JOptionPane.showInputDialog(""
                     + "a - Log in\n"
                     + "b - Registrarse in\n"
                     + "e - Salir\n"
                     + "");
             
-            if (login.equals("a"))//Login
+            if (opcion.equals("a"))//Login
             {
-                
-                while (!login.equals("e")){
+                String login= "";
+                while (!login.equals("d")){
                     opcion=JOptionPane.showInputDialog(""
-                    + "a - Log in\n"
-                    + "b - Registrarse in\n"
-                    + "e - Salir\n"
+                    + "a - Socio\n"
+                    + "b - Clientes in\n"
+                    + "c - Empleados\n"
+                    + "d - Regresar al menú principal\n"
                     + "");
-                
-                
-                
-                
-                
-                
-                
-                int p;
-                p=Integer.parseInt(JOptionPane.showInputDialog("Ingrese opción: \n"+
-                        "1 - Socio"+
-                        "2 - Clientes"+
-                        "3 - Empleados"));
-                
-                if (p==1)//socio
-                {
-                    int socOpt = Integer.parseInt(JOptionPane.showInputDialog("Ingrese opción: \n"+
+                    
+                    if (opcion.equals("a"))//Login socio
+                    {
+                        int socOpt = Integer.parseInt(JOptionPane.showInputDialog("Ingrese opción: \n"+
                         "1 - Agregar"+
                         "2 - Modificar"+
                         "3 - Eliminar"));
-                    
-                    if (socOpt==1)//Socios opción 1
-                    {
+                        
+                        
+                        if (socOpt==1)//Socios opción 1
+                         {
                         int agregarSoc = Integer.parseInt(JOptionPane.showInputDialog(
                         "Ingrese opción: \n"+
                         "1 - Tiendas"+
@@ -110,6 +100,7 @@ public class Lab3_MelvinV_AngelT {
                                 String nombreK = locales.get(a).getNombre();
                                 
                                 locales.add(new Quioscos(nombreK));
+                                System.out.println(locales);
                                 
                                 
                             }//fin Agregar Kioskos
@@ -121,6 +112,7 @@ public class Lab3_MelvinV_AngelT {
                                 a = input.nextInt();
                                 
                                 locales.add(new Localescomida(a));
+                                System.out.println(locales);
                             }//fin Agregar comida
                             
                             
@@ -136,34 +128,30 @@ public class Lab3_MelvinV_AngelT {
                             
                         
                         
-                    }
+                    }//Socios opción 1
+                        
+                        
+                    }// final login socio
+                    
+                
+                
+                
+                
+                
+                }
+                
+                
                                         
                     
                 }
                 
-                if (p==2)//cliente
-                {
-                    
-                }
                 
-                if (p==3)//empleado
-                {
-                    
-                }
-                
-                else{
-                    JOptionPane.showMessageDialog(null,"Ingrese la opción correcta");
-                }
-            }
-            
-            if (opcion.equals("b"))
-            {
-                
-            }
             
             
-        }
+            
+            
+        }//fin while menu
         
-    }
+    }//final main
     
 }
