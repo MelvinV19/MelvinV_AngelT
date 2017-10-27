@@ -29,7 +29,7 @@ public class Tiendas extends Locales{
 
     @Override
     public String toString() {
-        return "Tiendas"+"\n" + "tam: " + tam + "\n";
+        return "Tiendas"+"\n" +"nombre: "+super.getNombre()+"\n"+"Horario: "+super.getHora() +"\n"+"Piso: "+super.getPiso()+"\n"+"tam: " + tam + "\n";
     }
     
 }

@@ -44,7 +44,7 @@ public class Localescomida extends Locales{
 
     @Override
     public String toString() {
-        return "Localescomida" +"\n"+ "numero de empleados: " + numempleados + "\n";
+        return "Localescomida" +"\n"+"nombre: "+super.getNombre()+"\n"+"horario: "+super.getHora()+ "\n"+"piso: "+super.getPiso()+"\n"+"numero de empleados: " + numempleados + "\n";
     }
     
     
